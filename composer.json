@@ -1,0 +1,17 @@
+{
+    "name": "defacto/symfony2-cs",
+    "type": "library",
+    "description": "A Symfony2 coding standard, excluding commenting rules.",
+    "homepage": "http://www.de-facto.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter O'Callaghan",
+            "email": "pocallaghan@de-facto.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "target-dir": "Defacto/Standards/Symfony2"
+}
