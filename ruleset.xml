@@ -40,8 +40,6 @@
     <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
     <rule ref="Squiz.Scope.MemberVarScope"/>
 
-    <!-- We provide our own subclass of PEAR's ClassComment and FunctionComment sniff, but these will do: -->
-    <rule ref="PEAR.Commenting.InlineComment"/>
 
     <!-- Import Zend coding standard (which in turn imports PEAR) -->
     <rule ref="Zend">
@@ -51,7 +49,6 @@
         <!-- covered by Squiz ControlSignature, which enforces try/catch as well -->
         <exclude name="PEAR.ControlStructures.ControlSignature"/>
 
-        <exclude name="PEAR.Commenting.FunctionComment.SpacingBeforeTags"/>
 
         <!-- do not check line length -->
         <exclude name="Generic.Files.LineLength"/>
@@ -75,15 +72,4 @@
         <severity>0</severity>
     </rule>
 
-    <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="Symfony2.Commenting.FunctionComment.SpacingBeforeTags">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="Symfony2.Commenting.ClassComment.SpacingBeforeTags">
-        <message>There should always be a description, followed by a blank line, before the tags of a class comment.</message>
-    </rule>
 </ruleset>
